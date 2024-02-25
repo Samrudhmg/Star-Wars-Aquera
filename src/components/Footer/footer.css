@@ -1,11 +1,13 @@
 #footer {
-  height: auto; /* Change height to auto for responsiveness */
-  width: 92.33%;
+  height: auto; 
+  width: 93.33%;
   background-color: #111827;
   color: #e867fc;
   display: flex;
-  flex-direction: column; /* Adjust layout for responsiveness */
-  align-items: center; /* Center items vertically */
+  /* margin-left: 350px ; */
+  flex-direction: column; 
+  justify-content: space-around;
+  align-items: center;
   padding: 20px;
   border-radius: 12px;
 }
@@ -14,8 +16,8 @@
   margin-top: 10px;
   margin-right: 2.5px;
   height: 35px;
-  width: 100%; /* Adjust input width to fill the container */
-  max-width: 300px; /* Limit input width for larger screens */
+  width: 100%; 
+  max-width: 300px; 
   border-radius: 8px;
   padding: 0 12px;
   border: none;
@@ -23,7 +25,7 @@
 
 .newsletter {
   font-size: 1.5rem;
-  text-align: center; /* Center text */
+  text-align: center; 
   font-family: sans-serif;
   line-height: 40px;
   font-weight: 700;
@@ -42,8 +44,8 @@
 }
 
 .socials {
-  width: 100%; /* Adjust width to fill the container */
-  max-width: 30rem; /* Limit width for larger screens */
+  width: 100%; 
+  max-width: 30rem; 
   font-family:sans-serif;
 }
 
@@ -55,13 +57,13 @@
   font-size: large;
   font-weight: 400;
   color: white;
-  text-align: center; /* Center social links */
+  text-align: center; 
   margin-bottom: 1rem;
 }
 
 #socialLink a {
   color: white;
-  margin-right: 10px; /* Add space between social links */
+  margin-right: 10px; 
 }
 #socialLink a:hover {
   color: rgb(255, 128, 217);
@@ -71,7 +73,7 @@
   letter-spacing: 2px;
   font-weight: 900;
   font-size: 1.2rem;
-  text-align: center; /* Center address */
+  text-align: center; 
   margin-top: -0.5rem;
 }
 
@@ -80,14 +82,14 @@
   margin-top: -0.2rem;
   font-weight: 300;
   color: white;
-  text-align: center; /* Center address */
+  text-align: center; 
 }
 
 #button-sub {
   font-size: 1.2rem;
   height: 38px;
   width: 100%;
-  max-width: 150px; /* Limit button width for larger screens */
+  max-width: 150px; 
   background-color: rgb(0, 0, 0);
   border: none;
   border-radius: 8px;
@@ -99,22 +101,21 @@
   background-color: #383838;
 }
 
-/* Media queries for responsiveness */
+
 
 @media screen and (min-width: 768px) {
   #footer {
-    flex-direction: row; /* Change layout to row for larger screens */
-    justify-content: space-around; /* Align items horizontally */
-    text-align: left; /* Reset text alignment */
-    padding: 20px 50px; /* Adjust padding */
+    flex-direction: row; 
+    text-align: left; 
+    padding: 20px 50px; 
   }
 
   .newsletter {
-    width: 50%; /* Adjust width for larger screens */
-    max-width: 400px; /* Limit width for larger screens */
+    width: 50%; 
+    max-width: 400px; 
   }
 
   .socials {
-    width: 50%; /* Adjust width for larger screens */
+    width: 50%; 
   }
 }

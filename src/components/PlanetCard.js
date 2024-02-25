@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import ResidentsList from "./ResidentsList";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const PlanetCard = ({ planet }) => {
   const [residents, setResidents] = useState([]);
@@ -25,7 +24,7 @@ const PlanetCard = ({ planet }) => {
     }
   };
 
-  // Helper function to capitalize the first letter of each word
+
   const capitalizeFirstLetter = (str) => {
     return str
       .toLowerCase()
@@ -39,11 +38,22 @@ const PlanetCard = ({ planet }) => {
       <h2>{planet.name}</h2>
       <div className="planet-details">
         <p>
-          <FontAwesomeIcon icon="fa-solid fa-mountain" />
-          Climate: {capitalizeFirstLetter(planet.climate)}
+          <span>
+            <i class="fa-solid fa-cloud-sun"></i> Climate: {capitalizeFirstLetter(planet.climate)}
+          </span>
         </p>
-        <p>Population: {capitalizeFirstLetter(planet.population)}</p>
-        <p>Terrain: {capitalizeFirstLetter(planet.terrain)}</p>
+
+        <p>
+          <span>
+            <i class="fa-solid fa-users"></i> Population: {capitalizeFirstLetter(planet.population)}
+          </span>
+        </p>
+
+        <p>
+          <span>
+            <i class="fa-solid fa-earth-asia"></i> Terrain: {capitalizeFirstLetter(planet.terrain)}
+          </span>
+        </p>
       </div>
       {loading ? (
         <p>Loading residents...</p>

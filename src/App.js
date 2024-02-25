@@ -4,7 +4,6 @@ import PlanetCard from "./components/PlanetCard";
 import Pagination from "./components/Pagination";
 import Loader from "./components/Loader";
 import "./App.css";
-// import OpeningCrawl from './components/openingCrawl/OpeningCrawl.jsx';
 import LP from "./components/LP/LP";
 import Footer from "./components/Footer/Footer";
 
